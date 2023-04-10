@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>
+      <span class="rock">Rock</span> <span class="paper">Paper</span>
+      <span class="scissor">Scissors</span>
+    </h1>
+
+    <div class="result">
+      <div>You Win!</div>
+      <br />
+      <div>Paper beats Rock</div>
+    </div>
+
+    <div class="scores">
+      <div class="box">
+        <div class="name">Your Score:</div>
+        <div class="score">0</div>
+      </div>
+      <div class="box">
+        <div class="name">Computer Score:</div>
+        <div class="score">0</div>
+      </div>
+    </div>
+
+    <h2>Choose your weapon!</h2>
+    <div class="choice">
+      <button class="weapon" title="Rock">👊🏼</button>
+      <button class="weapon" title="Paper">👋🏽</button>
+      <button class="weapon" title="scissor">✌️</button>
+    </div>
+
+    <div class="end hidden">
+      <div class="winner">You are the winner!</div>
+      <button class="play again">Play Again!</button>
+    </div>
+
+    <div class="overlay hidden"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
