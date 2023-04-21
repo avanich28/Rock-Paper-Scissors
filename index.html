@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- link for erase 'favicon not found' error -->
+    <link rel="shortcut icon" href="#" />
   </head>
   <body>
     <h1>
@@ -34,19 +36,23 @@
 
     <h2>Choose your weapon!</h2>
     <div class="choice">
-      <button class="weapon" title="Rock">👊🏼</button>
-      <button class="weapon" title="Paper">👋🏽</button>
-      <button class="weapon" title="scissor">✌️</button>
+      <button id="0" class="weapon rock" title="Rock">👊🏼</button>
+      <button id="1" class="weapon paper" title="Paper">👋🏽</button>
+      <button id="2" class="weapon scissor" title="scissor">✌️</button>
     </div>
 
     <div class="condition">Have only 5 rounds</div>
 
     <div class="end hidden">
-      <div class="winner">You are the winner!</div>
+      <div class="resultEnd">You are the winner!</div>
       <button class="play again">Play Again!</button>
     </div>
 
     <div class="overlay hidden"></div>
+
+    <!-- Add sound -->
+    <audio class="sound" src="sounds/kick.wav"></audio>
+    <audio class="soundRestart" src="sounds/tink.wav"></audio>
   </body>
   <script src="script.js"></script>
 </html>
